@@ -18,5 +18,12 @@ public class WeeklyPayment extends Payment {
         return amount*weeksBetween;
     }
 
+    @Override
+    public void changePaytime() {
+        LocalDate currentDate = LocalDate.now();
+        if (currentDate.equals(payTime)) {
+            payTime.plusDays(7);
+        }
+    }
 
 }

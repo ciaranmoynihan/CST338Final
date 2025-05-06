@@ -16,6 +16,8 @@ public abstract class Payment {
     }
     abstract double getMonthlyPayment();
 
+    abstract void changePaytime();
+
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }

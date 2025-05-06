@@ -11,5 +11,12 @@ public class MonthlyPayment extends Payment {
         return amount;
     }
 
+    @Override
+    public void changePaytime() {
+        LocalDate currentDate = LocalDate.now();
+        if (currentDate.equals(payTime)) {
+            payTime.plusMonths(1);
+        }
+    }
 
 }
