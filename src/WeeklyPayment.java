@@ -22,7 +22,7 @@ public class WeeklyPayment extends Payment {
     public void changePayTime() {
         LocalDate currentDate = LocalDate.now();
         if (currentDate.equals(payTime)) {
-            payTime.plusDays(7);
+            payTime = payTime.plusDays(7);
         }
     }
 

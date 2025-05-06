@@ -23,7 +23,7 @@ public class YearlyPayment extends Payment {
     public void changePayTime() {
         LocalDate currentDate = LocalDate.now();
         if (currentDate.equals(payTime)) {
-            payTime.plusYears(1);
+            payTime = payTime.plusYears(1);
         }
     }
 

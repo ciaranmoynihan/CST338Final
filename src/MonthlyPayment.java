@@ -15,7 +15,7 @@ public class MonthlyPayment extends Payment {
     public void changePayTime() {
         LocalDate currentDate = LocalDate.now();
         if (currentDate.equals(payTime)) {
-            payTime.plusMonths(1);
+            payTime = payTime.plusMonths(1);
         }
     }
 
