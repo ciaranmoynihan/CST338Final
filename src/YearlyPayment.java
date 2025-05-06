@@ -20,7 +20,7 @@ public class YearlyPayment extends Payment {
     }
 
     @Override
-    public void changePaytime() {
+    public void changePayTime() {
         LocalDate currentDate = LocalDate.now();
         if (currentDate.equals(payTime)) {
             payTime.plusYears(1);
